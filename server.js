@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const htpp = require("http");
 const fs = require("fs");
+const path = require("path");
 
 let user;
 
@@ -15,7 +16,10 @@ fs.readFile("database/user.json", "utf-8", (err, data) => {
   console.log(data);
 });
 // 1. Kirish codelari
-app.use(express.static("public"));
+// app.use(express.static("public"));
+// app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, "public")));
+
 // console.log(express.static);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));

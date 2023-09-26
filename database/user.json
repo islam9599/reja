@@ -4,8 +4,8 @@
   "age": 25,
   "residence": "S.Korea",
   "address": "S.korea Busan",
-  "labguages": ["uzbek", "Korea", "English"],
-  "skilLs": ["Html", "Css", "Js", "NodeJs", "Python"],
+  "languages": ["Uzbek", "Korean", "English"],
+  "skills": ["Html", "Css", "Js", "NodeJs", "Python"],
   "extra_skills": [
     "Bootsatrap",
     "Materialize",
@@ -14,7 +14,7 @@
     "Git Knowledge"
   ],
   "work_place": "IT company",
-  "servicr_desc": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit sit dolorumquo nesciunt, minus iusto perspiciatis placeat quas reiciendis quae dicta natuslabore cupiditate culpa. Consectetur molestiae aperiam cupiditate neque?",
+  "service_desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.",
   "about_me": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, sed. Id, eum!",
   "city": "Denau",
   "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
