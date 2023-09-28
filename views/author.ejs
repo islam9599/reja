@@ -54,104 +54,69 @@
           </div>
           <div class="marginer"></div>
           <div class="left-2">
-            <div class="left-about">
-              <div class="left-about-items-1">
-                <div class="left-about-title-wrapper-1">
-                  <div class="left-about-title-1">Age:</div>
-                </div>
-                <div class="left-about-age"><%=user.age%></div>
+            <div class="left-2-about">
+              <div class="left-2-about-wrapper left-2-wrapper-age">
+                <h1>Age:</h1>
               </div>
-              <div class="left-about-items-2">
-                <div class="left-about-title-wrapper-2">
-                  <div class="left-about-title-1">Residence:</div>
-                </div>
-                <div class="left-about-age"><%=user.residence%></div>
+              <p><%=user.age%></p>
+            </div>
+            <div class="left-2-about">
+              <div class="left-2-about-wrapper"><h1>Residence:</h1></div>
+              <p><%=user.residence%></p>
+            </div>
+            <div class="left-2-about">
+              <div class="left-2-about-wrapper"><h1>Occupation:</h1></div>
+              <p><%=user.profession%></p>
+            </div>
+            <div class="left-2-about">
+              <div class="left-2-about-wrapper left-2-wrapper-address">
+                <h1>Address:</h1>
               </div>
-              <div class="left-about-items-3">
-                <div class="left-about-title-wrapper-3">
-                  <div class="left-about-title-3">Occupation</div>
-                </div>
-                <div class="left-about-profession"><%=user.profession%></div>
-              </div>
-              <div class="left-about-items-4">
-                <div class="left-about-title-wrapper-4">
-                  <div class="left-about-title">Age:</div>
-                </div>
-                <div class="left-about-age"><%=user.age%></div>
-              </div>
+              <p><%=user.address%></p>
             </div>
           </div>
           <div class="marginer"></div>
           <div class="left-3">
-            <div class="left-languages">
-              <div class="left-languages-title">Languages</div>
-              <div class="left-language">
-                <div class="left-language-name"><%=user.languages[0]%></div>
-                <div class="left-language-percent">100%</div>
-              </div>
-              <div class="left-percent-img">
-                <img src="images/percent-1.png" alt="" />
-              </div>
-              <div class="left-language">
-                <div class="left-language-name"><%=user.languages[1]%></div>
-                <div class="left-language-percent">80%</div>
-              </div>
-              <div class="left-percent-img">
-                <img src="images/percent-2.png" alt="" />
-              </div>
-              <div class="left-language">
-                <div class="left-language-name"><%=user.languages[2]%></div>
-                <div class="left-language-percent">60%</div>
-              </div>
-              <div class="left-percent-img">
-                <img src="images/percent-3.png" alt="" />
-              </div>
+            <div class="left-3-languages-title">Languages</div>
+            <div class="left-3-languages-wrapper">
+              <h1><%=user.languages[0]%></h1>
+              <p>100%</p>
             </div>
+            <img src="images/percent-1.png" class="left-3-percent" alt="" />
+            <div class="left-3-languages-wrapper">
+              <h1><%=user.languages[1]%></h1>
+              <p>80%</p>
+            </div>
+            <img src="images/percent-2.png" class="left-3-percent" alt="" />
+            <div class="left-3-languages-wrapper">
+              <h1><%=user.languages[2]%></h1>
+              <p>60%</p>
+            </div>
+            <img src="images/percent-3.png" class="left-3-percent" alt="" />
           </div>
           <div class="marginer"></div>
           <div class="left-4">
-            <div class="left-skills">
-              <div class="left-skills-title">Skills</div>
-              <div class="left-skill">
-                <div class="left-skill-name"><%=user.skills[0]%></div>
-                <div class="left-skill-percent">90%</div>
-              </div>
-              <div class="left-percent-img">
-                <img src="images/percent-4.png" alt="" />
-              </div>
-
-              <div class="left-skill">
-                <div class="left-skill-name"><%=user.skills[1]%></div>
-                <div class="left-skill-percent">85%</div>
-              </div>
-              <div class="left-percent-img">
-                <img src="images/percent-5.png" alt="" />
-              </div>
-
-              <div class="left-skill">
-                <div class="left-skill-name"><%=user.skills[2]%></div>
-                <div class="left-skill-percent">80%</div>
-              </div>
-              <div class="left-percent-img">
-                <img src="images/percent-6.png" alt="" />
-              </div>
-
-              <div class="left-skill">
-                <div class="left-skill-name"><%=user.skills[3]%></div>
-                <div class="left-skill-percent">70%</div>
-              </div>
-              <div class="left-percent-img">
-                <img src="images/percent-7.png" alt="" />
-              </div>
-
-              <div class="left-skill">
-                <div class="left-skill-name"><%=user.skills[4]%></div>
-                <div class="left-skill-percent">85%</div>
-              </div>
-              <div class="left-percent-img">
-                <img src="images/percent-8.png" alt="" />
-              </div>
+            <div class="left-3-languages-title">Skills</div>
+            <div class="left-3-languages-wrapper">
+              <h1><%=user.skills[0]%></h1>
+              <p>90%</p>
             </div>
+            <img src="images/percent-4.png" class="left-3-percent" alt="" />
+            <div class="left-3-languages-wrapper">
+              <h1><%=user.skills[1]%></h1>
+              <p>85%</p>
+            </div>
+            <img src="images/percent-5.png" class="left-3-percent" alt="" />
+            <div class="left-3-languages-wrapper">
+              <h1><%=user.skills[2]%></h1>
+              <p>80%</p>
+            </div>
+            <img src="images/percent-6.png" class="left-3-percent" alt="" />
+            <div class="left-3-languages-wrapper">
+              <h1><%=user.skills[3]%></h1>
+              <p>75%</p>
+            </div>
+            <img src="images/percent-7.png" class="left-3-percent" alt="" />
           </div>
           <div class="marginer"></div>
           <div class="left-5">
@@ -222,6 +187,44 @@
             <div class="midd-frame-about-img">
               <img src="images/profile-midd.png" alt="" />
             </div>
+            <div class="midd-frame-shapes">
+              <img
+                src="icon/midd-shapes/Ellipse-1.svg"
+                alt=""
+                class="midd-frame-shapes-ellipse-1"
+              />
+              <img
+                src="icon/midd-shapes/Ellipse-2.svg"
+                alt=""
+                class="midd-frame-shapes-ellipse-2"
+              />
+              <img
+                src="icon/midd-shapes/Ellipse-3.svg"
+                alt=""
+                class="midd-frame-shapes-ellipse-3"
+              />
+              <img
+                src="icon/midd-shapes/Ellipse-4.svg"
+                alt=""
+                class="midd-frame-shapes-ellipse-4"
+              />
+              <img
+                src="icon/midd-shapes/Rectangle-1.svg"
+                alt=""
+                class="midd-frame-shapes-rectangle-1"
+              />
+              <img
+                src="icon/midd-shapes/Rectangle-2.svg"
+                alt=""
+                class="midd-frame-shapes-rectangle-2"
+              />
+              <img
+                src="icon/midd-shapes/Polygon-1.svg"
+                alt=""
+                class="midd-frame-shapes-polygon-1"
+              />
+              <img src="icon/midd-shapes/elipse-1.svg" alt="" />
+            </div>
           </div>
           <div class="midd-frame-services">
             <div class="midd-frame-services-desc">
@@ -231,154 +234,86 @@
               </div>
             </div>
             <div class="midd-frame-services-items">
-                <div></div>
-                <div class="midd-frame-services-items-wrapper">
-                 <div class="midd-frame-services-items-element">
-                <div class="midd-frame-services-items-element-img">
-                  <img src="icon/midd-icons/midd-1.svg" alt="">
-                </div>
-                <div class="midd-frame-services-items-element-title">
-                  Web Development
-                </div>
-                <div class="midd-frame-services-items-element-desc">
-                  Blog, E-Commerce
-                </div>
+              <div class="midd-frame-services-items-container">
+                <img src="icon/midd-icons/midd-1.svg" alt="" />
+                <h1>Web Development</h1>
+                <p>Blog, E-Commerce</p>
               </div>
+              <div class="midd-frame-services-items-container">
+                <img src="icon/midd-icons/midd-2.svg" alt="" />
+                <h1>UI/UX Design</h1>
+                <p>Mobile app, website design</p>
               </div>
-              <div class="midd-frame-services-items-wrapper">
-                <div class="midd-frame-services-items-element">
-                <div class="midd-frame-services-items-element-img">
-                  <img src="icon/midd-icons/midd-2.svg" alt="">
-                </div>
-                <div class="midd-frame-services-items-element-title">
-                  UI/UX Design
-                </div>
-                <div class="midd-frame-services-items-element-desc">
-                  Mobile app, website design
-                </div>
+              <div class="midd-frame-services-items-container">
+                <img src="icon/midd-icons/midd-3.svg" alt="" />
+                <h1>Sound Design</h1>
+                <p>Voice Over, Beat Making</p>
               </div>
+            </div>
+            <div class="midd-frame-services-items">
+              <div class="midd-frame-services-items-container">
+                <img src="icon/midd-icons/midd-4.svg" alt="" />
+                <h1>Game Design</h1>
+                <p>Character Design, Props & Objects</p>
               </div>
-              <div class="midd-frame-services-items-wrapper">
-                <div class="midd-frame-services-items-element">
-                <div class="midd-frame-services-items-element-img">
-                  <img src="icon/midd-icons/midd-3.svg" alt="">
-                </div>
-                <div class="midd-frame-services-items-element-title">
-                  Sound Design
-                </div>
-                <div class="midd-frame-services-items-element-desc">
-                 Voice Over, Beat Making
-                </div>
-              </div>
-              </div>
-              </div>
-              <div class="midd-frame-services-items">
-                <div></div>
-                <div class="midd-frame-services-items-wrapper">
-                 <div class="midd-frame-services-items-element">
-                <div class="midd-frame-services-items-element-img">
-                  <img src="icon/midd-icons/midd-4.svg" alt="">
-                </div>
-                <div class="midd-frame-services-items-element-title">
-                  Game Design
-                </div>
-                <div class="midd-frame-services-items-element-desc">
-                  Character Design, Props & Objectsv
-                </div>
-              </div>
+              <div class="midd-frame-services-items-container">
+                <img src="icon/midd-icons/midd-5.svg" alt="" />
+                <h1>Photoprahpy</h1>
+                <p>Portrait, Product Photoprahpy</p>
               </div>
               <div class="midd-frame-services-items-wrapper">
                 <div class="midd-frame-services-items-element">
-                <div class="midd-frame-services-items-element-img">
-                  <img src="icon/midd-icons/midd-5.svg" alt="">
-                </div>
-                <div class="midd-frame-services-items-element-title">
-                  UI/UX Design
-                </div>
-                <div class="midd-frame-services-items-element-desc">
-                  Mobile app, website design
-                </div>
-              </div>
-              </div>
-              <div class="midd-frame-services-items-wrapper">
-                <div class="midd-frame-services-items-element">
-                <div class="midd-frame-services-items-element-header">
-                  Advertising
-                </div>
-                <div class="midd-frame-services-items-element-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.
-                </div>
-                <div class="midd-frame-services-items-element-desc-1">
-                 <div class="midd-frame-services-items-element-desc-btn">ORDER NOW
-                 <img src="btn_icon/btn-frame-yellow.svg" style="margin-left: 5px;" alt="">
-                </div>
-                  
+                  <div class="midd-frame-services-items-element-header">
+                    Advertising
+                  </div>
+                  <div class="midd-frame-services-items-element-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vitae nulla diam in ac dictum a urna viverra morbi.
+                  </div>
+                  <div class="midd-frame-services-items-element-desc-1">
+                    <div class="midd-frame-services-items-element-desc-btn">
+                      ORDER NOW
+                      <img
+                        src="btn_icon/btn-frame-yellow.svg"
+                        style="margin-left: 5px"
+                        alt=""
+                      />
+                    </div>
+                  </div>
                 </div>
               </div>
-              </div>
-              </div>
-              <!-- <div class="midd-frame-services-items">
-                <div class="midd-frame-services-items-wrapper">
-                 <div class="midd-frame-services-items-element">
-                <div class="midd-frame-services-items-element-img">
-                  <img src="icon/midd-icons/midd-4.svg" alt="">
-                </div>
-                <div class="midd-frame-services-items-element-title">
-                  Game Design
-                </div>
-                <div class="midd-frame-services-items-element-desc">
-                 Character Design, Props & Objects
-                </div>
-              </div>
-              </div>
-              <div class="midd-frame-services-items-wrapper">
-                 <div class="midd-frame-services-items-element">
-                <div class="midd-frame-services-items-element-img">
-                  <img src="icon/midd-icons/midd-4.svg" alt="">
-                </div>
-                <div class="midd-frame-services-items-element-title">
-                  Game Design
-                </div>
-                <div class="midd-frame-services-items-element-desc">
-                 Character Design, Props & Objects
-                </div>
-              </div>
-              
-              </div>
-              
-            </div> -->
+            </div>
           </div>
         </div>
         <div class="right-frame">
-            <div class="right-icons-container-icon-mode">
-              <img src="icon/mode.svg" alt="" />
-            </div>
-            <div class="right-icons-active">
-              <div class="right-icons-active-img">
-                <img src="btn_icon/active.svg" alt="" class="right-icons-active-img">
-                <div class="right-icons-active-title">Home</div>
-              </div>
-            </div>
-            <div class="right-icons-wrapper">
-                <div class="right-icons-container-icon-home isActive">
-                  <img src="icon/Home.svg" alt="" />
-                </div>
-                <div class="right-icons-container-icon-file">
-                  <img src="icon/File.svg" alt="" />
-                </div>
-                <div class="right-icons-container-icon-cv">
-                 <img src="icon/CV.svg" alt="" />
-                </div>
-                <div class="right-icons-container-icon-portolio">
-                  <img src="icon/Portfolio.svg" alt="" />
-                </div>
-                <div class="right-icons-container-icon-blog">
-                  <img src="icon/Blog.svg" alt="" />
-                </div>
-                <div class="right-icons-container-icon-contact">
-                  <img src="icon/Contact.svg" alt="" />
-                </div>
-            </div>
+          <div class="right-icons-container-icon-mode">
+            <img src="icon/mode.svg" alt="" />
+          </div>
+          <div class="right-icons-active">
+            <img
+              src="btn_icon/active.svg"
+              alt=""
+              class="right-icons-active-img"
+            />
+            <div class="right-icons-active-txt">HOME</div>
+          </div>
+          <div class="is-active">
+            <img src="icon/Home.svg" alt="" />
+          </div>
+          <div class="right-icons-container-icon-wrapper">
+            <img src="icon/File.svg" alt="" />
+          </div>
+          <div class="right-icons-container-icon-wrapper">
+            <img src="icon/CV.svg" alt="" />
+          </div>
+          <div class="right-icons-container-icon-wrapper">
+            <img src="icon/Portfolio.svg" alt="" />
+          </div>
+          <div class="right-icons-container-icon-wrapper">
+            <img src="icon/Blog.svg" alt="" />
+          </div>
+          <div class="right-icons-container-icon-wrapper">
+            <img src="icon/Contact.svg" alt="" />
           </div>
         </div>
       </div>
