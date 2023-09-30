@@ -174,3 +174,17 @@
 //   }
 // });
 // console.log("Passed here 1");
+
+//  E-TASK: E-Task: Shunday function tuzing, u bitta string argumentni qabul qilib osh stringni teskari qilib return qilsinmasalan: getReverse("hello") return qilsin "olleh"
+
+const getReverse = (str) => {
+  const strInput = str.split("");
+
+  return strInput.reverse().join("");
+};
+
+const result = getReverse("hello");
+console.log(result);
+
+const result1 = getReverse("World");
+console.log(result1);
