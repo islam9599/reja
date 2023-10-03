@@ -8,7 +8,7 @@ const path = require("path");
 //Mongo DB call
 
 const db = require("./server").db();
-console.log(db);
+// console.log(db);
 
 let user;
 
@@ -41,12 +41,38 @@ app.get("/author", (req, res) => {
   res.render("author", { user: user });
 });
 app.post("/create-item", (req, res) => {
+  console.log("User entered /create-item");
+  console.log(req.body);
+
   // console.log(req.body);
-  res.json({ test: "success" });
+  //res.json({ test: "success" });
+  const newReja = req.body.reja;
+  db.collection("plans").insertOne({ reja: newReja }, (err, data) => {
+    // if (err) {
+    //   console.log(err);
+    //   res.end("Sthg went wrong!");
+    // } else {
+    //   res.end("Successfully added");
+    // }
+    console.log(data.ops);
+    res.json(data.ops[0]);
+  });
 });
 
 app.get("/", function (req, res) {
-  res.render("reja");
+  console.log("User entered /");
+  db.collection("plans")
+    .find()
+    .toArray(function (err, data) {
+      if (err) {
+        console.log("ERROR", err);
+        res.end("Smth went wrong!");
+      } else {
+        // console.log(data);
+        res.render("reja", { items: data });
+      }
+    });
+  // res.render("reja");
 });
 
 module.exports = app;
