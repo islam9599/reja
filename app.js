@@ -74,7 +74,7 @@ app.post("/delete-item", (req, res) => {
 });
 
 app.post("/edit-item", (req, res) => {
-  const data = req.body.id;
+  const data = req.body;
   console.log(data);
   db.collection("plans").findOneAndUpdate(
     { _id: new mongodb.ObjectId(data.id) },

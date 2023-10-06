@@ -65,7 +65,7 @@ document.addEventListener("click", function (e) {
           new_input: userInput,
         })
         .then((res) => {
-          //   console.log(res.data);
+          console.log(res.data);
           e.target.parentElement.parentElement.querySelector(
             ".item-text"
           ).innerHTML = userInput;
