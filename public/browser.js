@@ -27,10 +27,61 @@ createForm.addEventListener("submit", function (e) {
       document
         .getElementById("item-list")
         .insertAdjacentHTML("beforeend", itemTemplate(res.data));
-      createField.value("");
+      createField.value = "";
       createField.focus();
     })
     .catch((err) => {
-      console.log("Please try again!!1");
+      console.log("Please try again!!");
     });
 });
+
+document.addEventListener("click", function (e) {
+  //   console.log(e);
+  if (e.target.classList.contains("delete-me")) {
+    if (confirm("Do you really want to delete?")) {
+      axios
+        .post("/delete-item", { id: e.target.getAttribute("data-id") })
+        .then((response) => {
+          console.log(response.data);
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {});
+    }
+  }
+  //Delete operations
+
+  if (e.target.classList.contains("edit-me")) {
+    // alert("You pressed edit button!!!");
+
+    let userInput = prompt(
+      "O'zgartirishni kiriting!",
+      e.target.parentElement.parentElement.querySelector(".item-text").innerHTML
+    );
+    if (userInput) {
+      console.log(userInput);
+      axios
+        .post("/edit-item", {
+          id: e.target.getAttribute("data-id"),
+          new_input: userInput,
+        })
+        .then((res) => {
+          //   console.log(res.data);
+          e.target.parentElement.parentElement.querySelector(
+            ".item-text"
+          ).innerHTML = userInput;
+        })
+        .catch((err) => {
+          console.log("Please try again later!");
+        });
+    }
+  }
+});
+
+document.getElementById("clean-all").addEventListener("click", function () {
+  axios.post("/delete-all", { delete_all: true }).then((res) => {
+    alert(res.data.state);
+    document.location.reload();
+  });
+});
+
+//Edit operations
