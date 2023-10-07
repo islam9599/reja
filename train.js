@@ -191,18 +191,28 @@
 
 // findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.masalan: getReverse("hello") return true return qiladi
 
-const findDoublers = (str) => {
-  let foundLetter = false;
+// const findDoublers = (str) => {
+//   let foundLetter = false;
 
-  for (let i = 0; i < str.length - 1; i++) {
-    if (str[i] === str[i + 1]) {
-      console.log(`Found doubler: ${str[i]}`);
-      foundLetter = true;
-    }
-  }
+//   for (let i = 0; i < str.length - 1; i++) {
+//     if (str[i] === str[i + 1]) {
+//       console.log(`Found doubler: ${str[i]}`);
+//       foundLetter = true;
+//     }
+//   }
 
-  return foundLetter;
+//   return foundLetter;
+// };
+
+// const result = findDoublers("sallom");
+// console.log(result);
+
+// H-Task: shunday function tuzing, u string qabul qilib teskari qilib return qilsin
+
+const reverseStr = (str) => {
+  return str.split("").reverse().join("");
 };
 
-const result = findDoublers("sallom");
+const result = reverseStr("Apple");
+
 console.log(result);
